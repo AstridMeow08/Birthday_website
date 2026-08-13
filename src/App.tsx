@@ -1,9 +1,6 @@
 import { useState } from 'react';
 import { Hero } from './components/Hero';
-import { Gallery } from './components/Gallery';
-import { Message } from './components/Message';
-import { Timeline } from './components/Timeline';
-import { Footer } from './components/Footer';
+
 import { PasscodeScreen } from './components/PasscodeScreen';
 import { WrongPasscodeScreen } from './components/WrongPasscodeScreen';
 import { GiftPromptScreen } from './components/GiftPromptScreen';
@@ -11,6 +8,7 @@ import { LetterScreen } from './components/LetterScreen';
 import { BirthdayGreetingScreen } from './components/BirthdayGreetingScreen';
 import { MemoriesScreen } from './components/MemoriesScreen';
 import { BookScreen } from './components/BookScreen';
+import { ScrapbookGallery } from './components/ScrapbookGallery';
 
 export type AppState = 'hero' | 'passcode' | 'wrong' | 'gift' | 'unlocked';
 
@@ -50,10 +48,7 @@ function App() {
               <BookScreen />
             </div>
           </div>
-          <Gallery />
-          <Message />
-          <Timeline />
-          <Footer />
+          <ScrapbookGallery />
         </>
       )}
     </main>

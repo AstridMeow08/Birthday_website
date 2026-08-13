@@ -1,13 +1,11 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Search, Mic, Camera } from 'lucide-react';
 
 export const MemoriesScreen = () => {
   const [showInnerGallery, setShowInnerGallery] = useState(false);
   const [flowersRevealed, setFlowersRevealed] = useState(false);
-  
-  const carouselRef = useRef<HTMLDivElement>(null);
-  const [dragWidth, setDragWidth] = useState(0);
+
 
   // We can pre-generate flower positions so they don't jump around on re-renders
   const [flowers] = useState(() =>
@@ -44,11 +42,6 @@ export const MemoriesScreen = () => {
 
   const currentImages = images;
 
-  useEffect(() => {
-    if (carouselRef.current) {
-      setDragWidth(carouselRef.current.scrollWidth - carouselRef.current.offsetWidth);
-    }
-  }, [currentImages, flowersRevealed]);
 
   return (
     <section style={styles.container}>
@@ -72,7 +65,7 @@ export const MemoriesScreen = () => {
               width: '180px',
               // Removed mixBlendMode to prevent muddy overlaps
             }}
-            initial={{ rotate: f.rotation, scale: f.scale, x: '-50%', y: '-50%' } as any} 
+            initial={{ rotate: f.rotation, scale: f.scale, x: '-50%', y: '-50%' } as any}
             animate={flowersRevealed ? { y: -1500, rotate: f.rotation + (Math.random() > 0.5 ? 180 : -180) } : { y: '-50%', x: '-50%', rotate: f.rotation, scale: f.scale }}
             transition={{ duration: 1.5, delay: f.delay, ease: "easeInOut" }}
           />
@@ -101,7 +94,7 @@ export const MemoriesScreen = () => {
         {/* Search Bar */}
         <div style={styles.searchBar}>
           <Search color="#9aa0a6" size={20} />
-          <span style={styles.searchText}>Moments of us ❤️</span>
+          <span style={styles.searchText}>Best Moments ❤️</span>
           <div style={styles.searchIcons}>
             <Mic color="#4285F4" size={20} />
             <Camera color="#4285F4" size={20} />
@@ -147,7 +140,7 @@ export const MemoriesScreen = () => {
           <div className="carousel-track">
             {currentImages.map((src, index) => (
               <motion.div
-                key={`set1-${src}`} 
+                key={`set1-${src}`}
                 style={{ ...styles.imageCard, cursor: showInnerGallery ? 'default' : 'pointer' }}
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -163,7 +156,7 @@ export const MemoriesScreen = () => {
           <div className="carousel-track">
             {currentImages.map((src, index) => (
               <motion.div
-                key={`set2-${src}`} 
+                key={`set2-${src}`}
                 style={{ ...styles.imageCard, cursor: showInnerGallery ? 'default' : 'pointer' }}
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -316,7 +309,7 @@ const styles = {
     maxWidth: '1000px',
     display: 'flex',
     zIndex: 2,
-    flex: 1, 
+    flex: 1,
     overflow: 'hidden', // hide native scrollbar, rely on framer-motion drag
     padding: '20px', // to allow box-shadow to breathe
     alignItems: 'center',
