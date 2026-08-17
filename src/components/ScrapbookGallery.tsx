@@ -2,18 +2,18 @@ import { useState, useRef } from "react";
 import Draggable from "react-draggable";
 
 const IMAGES = [
-  "/Vani/scrap_book/image00001.jpeg",
-  "/Vani/scrap_book/image00002.jpeg",
-  "/Vani/scrap_book/image00003.jpeg",
-  "/Vani/scrap_book/image00004.jpeg",
-  "/Vani/scrap_book/image00006.jpeg",
-  "/Vani/scrap_book/image00014.jpeg",
-  "/Vani/scrap_book/image00015.jpeg",
-  "/Vani/scrap_book/image00016.jpeg",
-  "/Vani/scrap_book/image00017.jpeg",
-  "/Vani/scrap_book/image00018.jpeg",
-  "/Vani/scrap_book/image00020.jpeg",
-  "/Vani/scrap_book/image00082.jpeg",
+  "/ref/girl.jpg",
+  "/ref/girl2.jpg",
+  "/ref/girl3.jpg",
+  "/ref/girl4.jpg",
+  "/ref/girl5.jpg",
+  "/ref/girl6.jpg",
+  "/ref/girl7.jpg",
+  "/ref/girl8.jpg",
+  "/ref/girl9.jpg",
+  "/ref/girl10.jpg",
+  "/ref/girl11.jpg",
+  "/ref/🤍.jpg",
 ];
 
 // Spread photos around edges/corners to leave center clear for placeholder

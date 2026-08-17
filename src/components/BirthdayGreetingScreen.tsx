@@ -85,7 +85,7 @@ export const BirthdayGreetingScreen = () => {
       >
         {/* Photo inside camera */}
         <img 
-          src="/Vani/main/q1.jpeg" 
+          src="/ref/girl.jpg" 
           alt="Photo in camera" 
           style={{
             position: 'absolute',

@@ -29,15 +29,15 @@ export const MemoriesScreen = () => {
   );
 
   const images = [
-    '/Vani/memories/image00005.jpeg',
-    '/Vani/memories/image00007.jpeg',
-    '/Vani/memories/image00008.jpeg',
-    '/Vani/memories/image00009.jpeg',
-    '/Vani/memories/image00010.jpeg',
-    '/Vani/memories/image00011.jpeg',
-    '/Vani/memories/image00012.jpeg',
-    '/Vani/memories/image00013.jpeg',
-    '/Vani/memories/image00019.jpeg'
+    '/ref/girl.jpg',
+    '/ref/girl2.jpg',
+    '/ref/girl3.jpg',
+    '/ref/girl4.jpg',
+    '/ref/girl5.jpg',
+    '/ref/girl6.jpg',
+    '/ref/girl7.jpg',
+    '/ref/girl8.jpg',
+    '/ref/girl9.jpg',
   ];
 
   const currentImages = images;

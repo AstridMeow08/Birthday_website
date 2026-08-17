@@ -110,7 +110,7 @@ export const BookScreen = () => {
         ></img>
 
         <img
-          src="/Vani/scrap_book/image00001.jpeg"
+          src="/ref/girl.jpg"
           alt="Front Cover"
           draggable={false}
           className="absolute inset-0 w-full h-full object-contain scale-25 rotate-10 translate-x-13 -translate-y-23"
@@ -161,21 +161,21 @@ export const BookScreen = () => {
         ></img>
 
         <img
-          src="/Vani/scrap_book/image00002.jpeg"
+          src="/ref/girl2.jpg"
           alt="Front Cover"
           draggable={false}
           className="absolute inset-0 w-full h-full object-contain shadow-black rotate-20  translate-x-19 -translate-y-22  scale-22   "
         ></img>
 
         <img
-          src="/Vani/scrap_book/image00003.jpeg"
+          src="/ref/girl3.jpg"
           alt="Front Cover"
           draggable={false}
           className="absolute inset-0 w-full h-full object-contain shadow-black rotate-20  translate-x-26 -translate-y-43  scale-22   "
         ></img>
 
         <img
-          src="/Vani/scrap_book/image00004.jpeg"
+          src="/ref/girl4.jpg"
           alt="Front Cover"
           draggable={false}
           className="absolute inset-0 w-full h-full object-contain shadow-black rotate-20  translate-x-11 translate-y-1  scale-22   "
